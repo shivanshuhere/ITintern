@@ -7,32 +7,21 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="sec-1 sec">
-            <div class="container-1">
-                <h2>Get Started Now</h2>
-                <form>
-                    <label for="name">Name</label
-                    ><input
-                        placeholder="Enter your name"
-                        type="text"
-                        id="name"
-                    /><label for="email">Email</label
-                    ><input
-                        placeholder="Enter your email"
-                        type="email"
-                        id="email"
-                    /><label for="pass">Password</label
-                    ><input placeholder="password" type="password" id="pass" />
-                    <label for="tc"
-                        ><input type="checkbox" id="tc" /> i agree to the
-                        <a href="#">term and policy.</a></label
-                    >
-                    <button type="submit">Sign Up</button>
-                </form>
-                <span> Have an account? <a href="#">Sign in</a> </span>
-            </div>
+        <div class="container">
+            <section class="sec1">
+                <div class="box">
+                    <form action="/signup" method="post">
+                        <h2>Get Into Now</h2>
+                        <label for="name">Name</label><input id="name" type="text">
+                        <label for="email">Email</label><input id ="email" type="email">
+                        <label for="pass">Password</label><input id="pass" type="password">
+                        <label for="tc"><input id="tc" type="checkbox"></label>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </section>
+            <section class="sec2"></section>
         </div>
-        <div class="sec-2 sec"></div>
         <script src="script.js"></script>
     </body>
 </html>
