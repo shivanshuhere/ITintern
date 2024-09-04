@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login Form</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="container">
-            <section class="sec1">
-                <div class="box">
-                    <form action="/signup" method="post">
-                        <h2>Get Into Now</h2>
-                        <label for="name">Name</label><input id="name" type="text">
-                        <label for="email">Email</label><input id ="email" type="email">
-                        <label for="pass">Password</label><input id="pass" type="password">
-                        <label for="tc"><input id="tc" type="checkbox"></label>
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </div>
-            </section>
-            <section class="sec2"></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="sec1">
+        <div class="box">
+          <form action="/signup" method="post">
+            <h2>Get Started Now</h2>
+            <label for="name">Name</label
+            ><input placeholder="Enter your name" id="name" type="text" />
+            <label for="email">Email</label
+            ><input placeholder="Enter your email" id="email" type="email" />
+            <label for="pass">Password</label
+            ><input
+              placeholder="Enter your password"
+              id="pass"
+              type="password"
+            />
+            <div>
+              <input id="tc" type="checkbox" />
+              <label for="tc">
+                agree to
+                <a href="#">term and policy</a>
+              </label>
+            </div>
+            <button type="submit">Signup</button>
+
+            <span>Have an account? <a href="#">Sign in</a></span>
+          </form>
         </div>
-        <script src="script.js"></script>
-    </body>
+      </section>
+      <section class="sec2"></section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
