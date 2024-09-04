@@ -84,6 +84,7 @@ section {
 
 .box form input {
   margin-bottom: 1rem;
+  color: gray;
 }
 
 .box form button {
