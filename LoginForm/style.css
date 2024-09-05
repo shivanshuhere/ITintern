@@ -96,8 +96,9 @@ section {
 }
 
 .box form button:hover {
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+  border: none;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
   cursor: pointer;
   transition-timing-function: ease-in;
 }
