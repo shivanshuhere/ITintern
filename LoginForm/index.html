@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form</title>
+    <title>Signup Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <section class="sec1">
         <div class="box">
-          <form action="/signup" method="post">
+          <!-- singup form -->
+          <form action="/signup" id="signupForm" method="post">
             <h2>Get Started Now</h2>
             <label for="name">Name</label
             ><input placeholder="Enter your name" id="name" type="text" />
@@ -21,6 +22,7 @@
               placeholder="Enter your password"
               id="pass"
               type="password"
+              autocomplete="username"
             />
             <div>
               <input id="tc" type="checkbox" />
@@ -31,7 +33,27 @@
             </div>
             <button type="submit">Signup</button>
 
-            <span>Have an account? <a href="#">Sign in</a></span>
+            <span>Have an account? <a href="#" id="signin">Sign in</a></span>
+            <!-- login form -->
+          </form>
+          <form action="/login" id="loginForm" method="get">
+            <h2>Welcome Back</h2>
+            <label for="email">Email</label
+            ><input placeholder="Enter your email" id="email" type="email" />
+            <label for="pass">Password</label
+            ><input
+              placeholder="Enter your password"
+              id="pass"
+              type="password"
+              autocomplete="username"
+            />
+
+            <button type="submit">Login</button>
+
+            <span
+              >Does not have an account?
+              <a href="#" id="signup">Signup</a></span
+            >
           </form>
         </div>
       </section>
