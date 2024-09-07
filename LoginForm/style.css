@@ -1,106 +1,113 @@
+/* General Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Container */
 .container {
   display: flex;
   background-color: whitesmoke;
+  min-height: 100vh;
 }
 
+/* Full-height Section */
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
+
+/* Section 1 */
 .sec1 {
-  /* background-image: url("https://images.pexels.com/photos/1425353/pexels-photo-1425353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 1/1; */
   width: 66%;
 }
 
+/* Section 2 */
 .sec2 {
   width: 34%;
   background-image: url("https://images.pexels.com/photos/927760/pexels-photo-927760.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   background-repeat: no-repeat;
-  aspect-ratio: 1/1;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
 
+/* Box Styling */
 .box {
-  /* background-color: rgba(0, 0, 0, 0.45); */
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box form {
-  height: 70%;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 2rem 5rem;
-  filter: blur();
+  padding: 2rem;
   backdrop-filter: blur(10px);
   font-size: 1em;
-  /* font-size: x-small; */
   font-family: sans-serif;
   width: 80%;
+  max-width: 400px;
 }
 
 .box form div {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  margin-bottom: 1rem;
 }
+
 .box form h2 {
   margin-bottom: 1.5rem;
-  font-size: xx-large;
+  font-size: 2em;
 }
 
 .box form input {
+  width: 100%;
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.155);
-  padding: 5px 0;
-  padding-left: 10px;
-  font-size: xx-small;
+  padding: 10px;
+  font-size: 0.9em;
   background-color: transparent;
-  color: rgba(220, 220, 220, 0.169);
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .box form label {
-  font-size: smaller;
+  font-size: 0.9em;
   font-weight: 700;
 }
+
+.box form input[type="checkbox"],
+.box form input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
 .box form label[for="tc"],
 .box form a,
 .box form span {
   color: black;
-  font-size: xx-small;
+  font-size: 0.8em;
   font-weight: 600;
-}
-
-.box form input {
-  margin-bottom: 1rem;
-  color: gray;
 }
 
 .box form button {
   background: rgb(255, 255, 29);
-  padding: 0.5rem 0.25rem;
+  padding: 0.75rem;
   border: 2px solid rgba(0, 0, 0, 0.744);
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .box form button:hover {
   border: none;
   border-bottom: 4px solid black;
   border-right: 4px solid black;
-  cursor: pointer;
-  transition-timing-function: ease-in;
 }
 
 .box form span {
@@ -111,4 +118,51 @@ section {
 .box form span a {
   color: rgb(51, 138, 173);
   text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .sec1 {
+    width: 100%;
+  }
+  .sec2 {
+    display: none;
+  }
+  .box form {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box form {
+    padding: 1.5rem;
+  }
+  .box form h2 {
+    font-size: 1.75em;
+  }
+  .box form input,
+  .box form button {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .box form {
+    padding: 1rem;
+    width: 95%;
+  }
+  .box form h2 {
+    font-size: 1.5em;
+  }
+  .box form input,
+  .box form button,
+  .box form label,
+  .box form a,
+  .box form span {
+    font-size: 0.8em;
+  }
 }
