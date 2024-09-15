@@ -63,6 +63,12 @@ function selectBtn(e) {
       output.value = "";
       console.log("a :", a, " div", div);
       break;
+    case "%":
+      a = output.value;
+      div = true;
+      output.value = "";
+      console.log("a :", a, " rem", rem);
+      break;
     case "AC":
       output.value = "";
       break;
@@ -93,7 +99,14 @@ function selectBtn(e) {
         output.value = res;
         div = false;
       }
+      if (mul) {
+        res = Number(a) % Number(b);
+        a = b = 0;
+        output.value = res;
+        div = false;
+      }
       break;
+
     case "Del":
       let str = output.value;
       let newStr = str.slice(0, str.length - 1);
