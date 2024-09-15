@@ -107,7 +107,7 @@ function selectBtn(e) {
       }
       break;
 
-    case "Del":
+    case "DEL":
       let str = output.value;
       let newStr = str.slice(0, str.length - 1);
       output.value = newStr;
