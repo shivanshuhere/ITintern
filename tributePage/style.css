@@ -5,6 +5,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: black;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -13,6 +14,8 @@ body {
 
 /* navbar */
 nav {
+  position: sticky;
+  top: 0px;
   display: flex;
   justify-content: space-between;
   background-color: rgba(4, 4, 134, 0.587);
