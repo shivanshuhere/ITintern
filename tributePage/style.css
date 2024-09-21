@@ -19,11 +19,12 @@ nav {
   position: sticky;
   top: 0px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgba(188, 0, 0, 0.906);
   height: fit-content;
   z-index: 1;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 h2 {
@@ -33,18 +34,20 @@ h2 {
 
 main h1 {
   margin-bottom: 1em;
-
   color: rgb(255, 94, 94);
 }
 
 nav section {
   display: inline;
 }
+
 nav section:nth-child(1) {
   font-weight: bold;
 }
+
 nav section:nth-child(2) {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   gap: 1rem;
 }
@@ -62,8 +65,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid red; */
-  padding: 1rem 2rem;
+  padding: 1rem;
   gap: 1rem;
   background-color: rgba(14, 14, 14, 0.447);
   backdrop-filter: blur(4px);
@@ -73,12 +75,10 @@ main section {
   width: 100%;
   height: 100%;
   min-height: 80vh;
-  width: 100%;
-  /* border: 2px solid green; */
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 4rem;
+  padding: 2rem 1rem;
   opacity: 0;
   position: relative;
   left: -10rem;
@@ -86,23 +86,26 @@ main section {
 }
 
 main section:nth-child(1) h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
 main section h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 main .homeSec {
   display: flex;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
 }
+
 main .homeSec p,
 main .homeSec img {
-  height: 70vh;
+  height: auto;
+  max-width: 100%;
 }
 
 main section:nth-child(1) p::first-letter {
@@ -133,4 +136,57 @@ footer {
   padding: 1em 0;
   text-align: center;
   color: rgb(255, 186, 186);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 1rem 2rem;
+  }
+
+  main section {
+    padding: 2rem 4rem;
+  }
+
+  main section:nth-child(1) h1 {
+    font-size: 4rem;
+  }
+
+  main section h2 {
+    font-size: 3rem;
+  }
+
+  main .homeSec {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  main .homeSec p,
+  main .homeSec img {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav section:nth-child(2) {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  main section:nth-child(1) h1 {
+    font-size: 2.5rem;
+  }
+
+  main section h2 {
+    font-size: 2rem;
+  }
 }
