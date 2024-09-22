@@ -1,0 +1,44 @@
+--root{
+    /* font size and weight */
+    --caption2 : 12px;
+    --caption1: 13px;
+    --body:16px;
+    --headline2:20px;
+    --headline1:21px;
+    --title4:22px;
+    --title3:24px;
+    --title2:28px 20px;
+    --title1:30px 48px;
+    --lgTitle:33px 55px;
+
+    /* color */
+    --black :rgb(0,0,0);
+    --red :rgb(229, 9,20);
+    --white :rgb(255,255,255);
+    --red100:rgb(235,57,66);
+    --red200:rgb(193,17,25);
+    --red300:rgb(245,7,35);
+    --blue100:rgb(0,113,235);
+    --blue200:rgb(68,142,244);
+    --blue300:rgb(84,185,197);
+    --green:rgb(70,211,105);
+    --grey10:rgb(229,229,229);
+    --grey20:rgb(220, 220, 220);
+    --grey25:rgb(210,210,210);
+    --grey50:rgb(188,188,188);
+    --grey100:rgb(179,179,179);
+    --grey150:rgb(151,151,151);
+    --grey200:rgb(128,128,128);
+    /* upto 900 */ 
+   --transparentWhite15:rgb(255,255,255,15%); 
+   --transparentWhite20:rgb(255,255,255,20%); 
+   --transparentWhite25:rgb(255,255,255,12%); 
+   --transparentWhite30:rgb(255,255,255,30%); 
+   --transparentWhite35:rgb(255,255,255,35%); 
+   --transparentWhite50:rgb(255,255,255,50%); 
+   --transparentWhite70:rgb(255,255,255,70%); 
+   --transparentBlack30:rgb(0,0,0,30%); 
+   --transparentBlack60:rgb(0,0,0,60%); 
+   --transparentBlack90:rgb(0,0,0,90%); 
+
+}
