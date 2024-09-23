@@ -120,8 +120,11 @@ nav button, nav select{
     width: 100%;
     align-items: center;
     /* border: 2px solid green; */
-    margin: 5px 0 ;
     background-color: black;
+}
+
+.secTwo:not(.secTwo1){
+    margin: 3px 0;
 }
 
 .secTwo .img{
@@ -145,22 +148,52 @@ nav button, nav select{
     justify-content: center;
     align-items: center;
     gap:1rem;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: black;
     margin-bottom: 5px;
+    padding:2rem 0 ;
 }
 
 #faqSec ul {
+    
+    height: 100%;
     width: 70%;
     margin:1rem 0 ;
 }
 #faqSec ul li{
-    width: 100%;
-    padding:1rem;
-    background-color: grey;
-    border:1px solid white;
     list-style: none;
+    cursor: pointer;
+    margin: 5px 0;
+    
+}
+
+#faqSec ul li details summary{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    list-style: none;
+}
+#faqSec ul li details summary::after{
+    content: "+";
+}
+
+
+#faqSec ul li details[open] summary::after{
+    transform: rotate(45deg);
+}
+
+#faqSec ul li details[open] p
+{
+    background-color: rgb(56, 56, 56);
+    padding:1rem;
+    
+}
+#faqSec ul li details[open] summary{
+    border: 0px;
+    background-color: rgb(56, 56, 56);
 }
 
  .emailInput{
