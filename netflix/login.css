@@ -1,0 +1,140 @@
+:root{
+    /* font size and weight */
+    --caption2 : 12px;
+    --caption1: 13px;
+    --body:16px;
+    --headline2:20px;
+    --headline1:21px;
+    --title4:22px;
+    --title3:24px;
+    --title2:28px 20px;
+    --title1:30px 48px;
+    --lgTitle:33px 55px;
+
+    /* color */
+    --black :rgb(0,0,0);
+    --red :rgb(229, 9,20);
+    --white :rgb(255,255,255);
+    --red100:rgb(235,57,66);
+    --red200:rgb(193,17,25);
+    --red300:rgb(245,7,35);
+    --blue100:rgb(0,113,235);
+    --blue200:rgb(68,142,244);
+    --blue300:rgb(84,185,197);
+    --green:rgb(70,211,105);
+    --grey10:rgb(229,229,229);
+    --grey20:rgb(220, 220, 220);
+    --grey25:rgb(210,210,210);
+    --grey50:rgb(188,188,188);
+    --grey100:rgb(179,179,179);
+    --grey150:rgb(151,151,151);
+    --grey200:rgb(128,128,128);
+    /* upto 900 */ 
+   --transparentWhite15:rgb(255,255,255,15%); 
+   --transparentWhite20:rgb(255,255,255,20%); 
+   --transparentWhite25:rgb(255,255,255,12%); 
+   --transparentWhite30:rgb(255,255,255,30%); 
+   --transparentWhite35:rgb(255,255,255,35%); 
+   --transparentWhite50:rgb(255,255,255,50%); 
+   --transparentWhite70:rgb(255,255,255,70%); 
+   --transparentBlack30:rgb(0,0,0,30%); 
+   --transparentBlack60:rgb(0,0,0,60%); 
+   --transparentBlack90:rgb(0,0,0,90%); 
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/LandingPage.png);
+    color: white;
+    font-family: sans-serif;
+    backdrop-filter: brightness(3);
+}
+
+nav{
+    width: 100%;
+    height: 4rem;
+    background-color: transparent;
+   position: absolute;
+   top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap:10px;
+    /* border: 2px solid blue; */
+    padding: 1rem 0;
+    
+}
+
+main form h2{
+    text-transform:capitalize;
+    font:4em;
+}
+
+main form input, main form button{
+    min-width: 15rem;
+    padding: 10px 5px;
+    padding-right:0 ;
+    border-radius: 2px;
+    border: none;
+}
+
+main form input {
+    border: 1px solid black;
+    
+}
+
+
+main form button{
+    background-color: var(--red300);
+    color: var(--white);
+}
+
+main form p{
+    text-align: center;
+}
+
+main form label{
+    border: 2px solid blue;
+}
+
+main form label input{
+    display:inline;
+}
+
+#box{
+    width: 20rem;
+    /* max-width: 20rem; */
+    padding:  0 2rem;
+    padding-bottom:4rem ;
+    padding-top: 1rem;
+    /* border:2px solid red; */
+    border-radius: 3px;
+    background-color: var(--transparentBlack60);
+}
+
+#box a{
+    color: rgb(225, 225, 225);
+}
