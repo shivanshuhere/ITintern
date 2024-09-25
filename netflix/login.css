@@ -93,7 +93,7 @@ main form h2{
     font:4em;
 }
 
-main form input, main form button{
+main form input:not(main form label input), main form button{
     min-width: 15rem;
     padding: 10px 5px;
     padding-right:0 ;
@@ -116,12 +116,11 @@ main form p{
     text-align: center;
 }
 
-main form label{
-    border: 2px solid blue;
-}
+
 
 main form label input{
-    display:inline;
+   
+    margin:0 10px 0 0 ;
 }
 
 #box{
@@ -138,3 +137,4 @@ main form label input{
 #box a{
     color: rgb(225, 225, 225);
 }
+
