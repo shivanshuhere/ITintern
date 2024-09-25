@@ -54,6 +54,9 @@ body{
     color: white;
     font-family: sans-serif;
     backdrop-filter: brightness(3);
+   background-position: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 nav{
