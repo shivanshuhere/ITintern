@@ -54,7 +54,7 @@ body{
     color: white;
     font-family: sans-serif;
     backdrop-filter: brightness(3);
-   background-position: fixed;
+   background-position:fixed ;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -129,7 +129,7 @@ main form label input{
     margin:0 10px 0 0 ;
 }
 
-#box{
+.box{
     width: 20rem;
     /* max-width: 20rem; */
     padding:  0 2rem;
@@ -140,8 +140,16 @@ main form label input{
     background-color: var(--transparentBlack60);
 }
 
-#box a{
+.box a{
     color: rgb(225, 225, 225);
+}
+
+.hideBox{
+    display: none;
+}
+
+.showBox{
+    display: block;
 }
 
 
