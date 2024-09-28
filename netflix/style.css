@@ -53,6 +53,24 @@
 body{
     background-color: rgba(0, 0, 0, 0.886);
     color: white;
+    font-family: sans-serif;
+}
+
+a{
+    color:white;
+}
+
+select{
+    background-color: var(--red300);
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+
+}
+
+select:active, select:focus{
+    border: none;
+    outline: none;
 }
 
 /* navbar */
@@ -66,11 +84,23 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
+color: var(--red300);
+text-transform:capitalize;
+
 }
 
 nav button, nav select{
     width: fit-content;
     padding:4px 7px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    background-color: var(--red300);
+    padding:3px 1rem;
+    border: none;
+    border-radius: 2px;
 }
 
 /* hero section */
@@ -106,6 +136,59 @@ nav button, nav select{
     text-align: start;
 
 }
+
+#heroFirst{
+    gap:1rem;
+}
+
+
+#heroFirst h1 {
+font-size: 3rem;
+}
+
+#heroFirst p:nth-child(2){
+    font-size: 1.7rem;
+    color:var(--grey50);
+}
+#heroFirst p:nth-child(3){
+    font-size: 1rem;
+    color:var(--grey100);
+}
+#heroFirst div input
+{
+    border: none;
+    border-radius: 2px;
+    padding-left: 10px;
+    height: 2rem;
+    width: 20rem;
+    color: white;
+    background-color: var(--red300);
+}
+
+#heroFirst div input::placeholder{
+    color: white;
+}
+#heroFirst div input:active,
+#heroFirst div input:focus
+{
+    outline: none;
+    border: none;
+}
+
+#heroFirst div button:hover{
+    cursor: pointer;
+    background-color: var(--red200);
+}
+#heroFirst div button{
+    background-color: var(--red300);
+    height: 2rem;
+    border-radius: 2px;
+    border: none;
+    padding: 0 1rem;
+    color:white;
+}
+
+
 
 /* other sections */
 
