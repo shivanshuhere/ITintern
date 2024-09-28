@@ -144,15 +144,10 @@ main form label input{
     color: rgb(225, 225, 225);
 }
 
-.hideBox{
+
+#form2, #p2{
     display: none;
 }
-
-.showBox{
-    display: block;
-}
-
-
 footer{
     display: flex;
     flex-direction: column;
