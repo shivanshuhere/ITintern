@@ -50,7 +50,7 @@
 }
 
 body{
-    background-image: url(assets/LandingPage.png);
+    background-image: url(/netflix/assets/LandingPage.png);
     color: white;
     font-family: sans-serif;
     backdrop-filter: brightness(3);
