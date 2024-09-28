@@ -63,9 +63,9 @@ a{
 select{
     background-color: var(--red300);
     color: white;
-    padding: 10px;
+    padding: 2px 10px;
     border-radius: 2px;
-
+border: none;
 }
 
 select:active, select:focus{
@@ -126,7 +126,7 @@ nav a{
     justify-content: center;
     align-items: center;
 }
-#hero #heroSec{
+#hero {
     /* border:2px solid red; */
     width: 100%;
     display: flex;
@@ -134,7 +134,6 @@ nav a{
     align-items: center;
     justify-content: center;
     text-align: start;
-
 }
 
 #heroFirst{
@@ -154,7 +153,7 @@ font-size: 3rem;
     font-size: 1rem;
     color:var(--grey100);
 }
-#heroFirst div input
+#heroFirst div input, #faqSec div input
 {
     border: none;
     border-radius: 2px;
@@ -162,25 +161,31 @@ font-size: 3rem;
     height: 2rem;
     width: 20rem;
     color: white;
-    background-color: var(--red300);
+    background-color: var(--red);
 }
 
-#heroFirst div input::placeholder{
+#heroFirst div input::placeholder,
+#faqSec div input::placeholder
+{
     color: white;
 }
 #heroFirst div input:active,
 #heroFirst div input:focus
+,#faqSec div input:active,
+#faqSec div input:focus
 {
     outline: none;
     border: none;
 }
 
-#heroFirst div button:hover{
+#heroFirst div button:hover, 
+#faqSec div button:hover
+{
     cursor: pointer;
     background-color: var(--red200);
 }
-#heroFirst div button{
-    background-color: var(--red300);
+#heroFirst div button, #faqSec div button{
+    background-color: var(--red);
     height: 2rem;
     border-radius: 2px;
     border: none;
@@ -188,6 +193,24 @@ font-size: 3rem;
     color:white;
 }
 
+
+#heroSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,41,1) 100%, rgba(0,212,255,1) 100%);
+
+}
+#heroSec img{
+    aspect-ratio: 1/1;
+
+}
+    
+#heroSec div{
+   color: var(--grey100);
+}
 
 
 /* other sections */
